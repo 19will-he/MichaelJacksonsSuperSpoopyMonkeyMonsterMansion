@@ -1,5 +1,6 @@
 package com.yarharharddrive.engine;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 import com.yarharharddrive.listeners.KeyboardListener;
@@ -12,6 +13,7 @@ public class Game
 	private final GameThread gameThread;
 	private final KeyboardListener keyboardListener;
 	private final MousepadListener mousepadListener;
+	// private final ImageIcon icon = new ImageIcon("config\\icon.png");
 	
 	public Game(int winX, int winY, String title)
 	{
@@ -23,6 +25,7 @@ public class Game
 		window.setLocationRelativeTo(null);
 		// window.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		// window.setUndecorated(true);
+		// window.setIconImage(new ImageIcon("icon.png").getImage());
 		window.setVisible(true);
 		
 		screenFactory = new ScreenFactory(this);
